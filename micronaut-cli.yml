@@ -1,0 +1,6 @@
+applicationType: cli
+defaultPackage: com.oleson
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [app-name, cache-caffeine, gradle, http-client-jdk, junit, kotlin, ksp, logback, micronaut-build, mockito, picocli, picocli-junit, picocli-kotlin-application, reactor, readme, serialization-jackson, shade, yaml, yaml-build]
