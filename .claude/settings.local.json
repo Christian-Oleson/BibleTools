@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew test:*)",
+      "Bash(JAVA_HOME=~/.sdkman/candidates/java/21.0.2-amzn ./gradlew test:*)",
+      "Bash(JAVA_HOME=~/.sdkman/candidates/java/21.0.2-amzn ./gradlew:*)",
+      "Bash(~/.sdkman/candidates/java/21.0.2-amzn/bin/java -jar build/libs/bible-tools-0.1-all.jar --help)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd CLI options for passage, API key, and file output\n\n- Add required --passage/-p option for specifying Bible passages\n- Add --api-key/-k option with ESV_API_KEY env var fallback\n- Add --output/-o option to write Markdown to file\n- Add error handling for API failures\n- Update tests for new CLI behavior\n- Update dependencies: Kotlin 1.9.25, Micronaut 4.7.4, Gradle 8.13\n- Upgrade to Java 21 target\n- Update README with usage documentation\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
