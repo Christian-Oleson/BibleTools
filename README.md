@@ -1,6 +1,58 @@
 # Bible Tools
 
-This repo will house different tools to help with users who read the Bible. The tool will seek to allow for different translations to be downloaded in a variety of formats as well as study tools and other plugins. For now, this is just a shell repository until further work is completed.
+A CLI tool to fetch Bible passages from the ESV API and convert them to Markdown format.
+
+## Requirements
+
+- Java 21+
+- ESV API key (get one at https://api.esv.org/)
+
+## Installation
+
+```bash
+./gradlew build
+```
+
+This creates a runnable JAR at `build/libs/bibletools-*-all.jar`.
+
+## Usage
+
+```bash
+# Basic usage (prints to console)
+java -jar build/libs/bibletools-0.1-all.jar -p "John 3:16" -k YOUR_API_KEY
+
+# Save to file
+java -jar build/libs/bibletools-0.1-all.jar -p "Romans 8:28-39" -k YOUR_API_KEY -o passage.md
+
+# Using environment variable for API key
+export ESV_API_KEY=your_api_key_here
+java -jar build/libs/bibletools-0.1-all.jar -p "Psalm 23"
+
+# Verbose mode
+java -jar build/libs/bibletools-0.1-all.jar -p "John 3:16" -k YOUR_API_KEY -v
+```
+
+### CLI Options
+
+| Option | Description |
+|--------|-------------|
+| `-p, --passage` | Bible passage to fetch (required) |
+| `-k, --api-key` | ESV API key (or set `ESV_API_KEY` env var) |
+| `-o, --output` | Output file path for Markdown |
+| `-v, --verbose` | Enable verbose output |
+| `-h, --help` | Show help message |
+
+## Development
+
+```bash
+# Run tests
+./gradlew test
+
+# Run directly with Gradle
+./gradlew run --args="-p 'John 3:16' -k YOUR_API_KEY"
+```
+
+---
 
 ## Micronaut 4.0.6 Documentation
 
