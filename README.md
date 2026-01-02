@@ -34,13 +34,13 @@ java -jar build/libs/bibletools-0.1-all.jar -p "John 3:16" -k YOUR_API_KEY -v
 
 ### CLI Options
 
-| Option | Description |
-|--------|-------------|
-| `-p, --passage` | Bible passage to fetch (required) |
+| Option          | Description                                |
+|-----------------|--------------------------------------------|
+| `-p, --passage` | Bible passage to fetch (required)          |
 | `-k, --api-key` | ESV API key (or set `ESV_API_KEY` env var) |
-| `-o, --output` | Output file path for Markdown |
-| `-v, --verbose` | Enable verbose output |
-| `-h, --help` | Show help message |
+| `-o, --output`  | Output file path for Markdown              |
+| `-v, --verbose` | Enable verbose output                      |
+| `-h, --help`    | Show help message                          |
 
 ## Development
 
