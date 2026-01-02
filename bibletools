@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+JAVA_HOME="${JAVA_HOME:-$HOME/.sdkman/candidates/java/current}"
+JAR_PATH="/home/christianoleson/projects/BibleTools/build/libs/bible-tools-0.1-all.jar"
+exec "$JAVA_HOME/bin/java" -jar "$JAR_PATH" "$@"

@@ -57,7 +57,7 @@ class BibletoolsCommandTest {
         PicocliRunner.run(BibletoolsCommand::class.java, ctx, *args)
 
         val errOutput = errBaos.toString()
-        Assertions.assertTrue(errOutput.contains("Missing required option"))
+        Assertions.assertTrue(errOutput.contains("Passage is required"))
 
         ctx.close()
     }
