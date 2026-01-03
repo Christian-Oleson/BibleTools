@@ -54,7 +54,7 @@ data class EsvApiResponse(
     val query: String,
     val canonical: String,
     val parsed: List<List<Long>>,
-    @JsonProperty("passage_meta")
+    @param:JsonProperty("passage_meta")
     val passageMeta: List<PassageMeta>,
     val passages: List<String>
 )
@@ -63,16 +63,16 @@ data class EsvApiResponse(
 @Deserializable
 data class PassageMeta(
     val canonical: String,
-    @JsonProperty("chapter_start")
+    @param:JsonProperty("chapter_start")
     val chapterStart: List<Long>,
-    @JsonProperty("chapter_end")
+    @param:JsonProperty("chapter_end")
     val chapterEnd: List<Long>,
-    @JsonProperty("prev_verse")
+    @param:JsonProperty("prev_verse")
     val prevVerse: Long,
-    @JsonProperty("next_verse")
+    @param:JsonProperty("next_verse")
     val nextVerse: Long,
-    @JsonProperty("prev_chapter")
+    @param:JsonProperty("prev_chapter")
     val prevChapter: List<Long>,
-    @JsonProperty("next_chapter")
+    @param:JsonProperty("next_chapter")
     val nextChapter: List<Long>
 )
