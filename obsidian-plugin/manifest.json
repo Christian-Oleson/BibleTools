@@ -1,0 +1,9 @@
+{
+  "id": "esv-bible",
+  "name": "ESV Bible",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Fetch Bible passages from the ESV API and insert them as Markdown.",
+  "author": "Christian Oleson",
+  "isDesktopOnly": false
+}
